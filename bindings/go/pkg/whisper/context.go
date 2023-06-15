@@ -166,9 +166,9 @@ func (context *context) Process(
 		return ErrInternalAppError
 	}
 	// If the callback is defined then we force on single_segment mode
-	if cb != nil {
-		context.params.SetSingleSegment(true)
-	}
+	// if cb != nil {
+	// 	context.params.SetSingleSegment(true)
+	// }
 
 	// We don't do parallel processing at the moment
 	processors := 0
